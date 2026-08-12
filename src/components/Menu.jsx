@@ -5,6 +5,7 @@ import { allCocktails } from '../../constants'
 import { useGSAP } from '@gsap/react'
 import { gsap } from 'gsap/gsap-core'
 
+
 function Menu() {
     const contentRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0)

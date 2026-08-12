@@ -7,6 +7,7 @@ import Cocktaills from "./components/Cocktails";
 import About from "./components/About";
 import Art from "./components/Art";
 import Menu from "./components/Menu";
+import Contact from "./components/Contact";
 import './App.css'
 
 gsap.registerPlugin(ScrollTrigger, SplitText); //this makes sure that the plugin is registered and available for use in your GSAP animations globally
@@ -23,6 +24,7 @@ function App() {
     <About/>
     <Art/>
     <Menu/>
+    <Contact/>
     
   </main>
   )

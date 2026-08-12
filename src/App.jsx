@@ -15,9 +15,7 @@ function App() {
   <main>
     <Navabar/>
     <Hero/>
-    <div className="h-dvh bg-black">
-
-    </div>
+    
   </main>
   )
 }

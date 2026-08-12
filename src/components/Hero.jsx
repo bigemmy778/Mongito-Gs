@@ -85,7 +85,7 @@ const Hero = () => {
 
     return (
         <>
-            <section id='hero' className='noisy'>
+            <section id='hero' className='noisy relative'>
                 <h1 className='title'>
                     ELIXIR
                 </h1>
@@ -123,7 +123,6 @@ const Hero = () => {
 
             </section>
 
-
             <div className='video absolute inset-0'>
                 <video src='/videos/output.mp4'
                     ref={videoRef}
@@ -131,6 +130,7 @@ const Hero = () => {
 
                 </video>
             </div>
+
         </>
     )
 }

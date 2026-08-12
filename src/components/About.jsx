@@ -29,7 +29,7 @@ const About = () => {
         <div id='about'>
             <div className='mb-16 md:px-0 px-5'>
                 <div className='content'>
-                    <div className='md:col-span-8'>
+                    <div className='md:col-span-8 z-20'>
                         <p className='badge'>Best Cocktails</p>
                         <h2>Where every detail matter
                             <span className='text-white'> </span>
@@ -38,7 +38,7 @@ const About = () => {
                         </h2>
                     </div>
 
-                    <div className='sub-content'>
+                    <div className='sub-content z-20'>
                         <p>
                             Every cocktail we serve is reflection of our obsession
                             with detail from the first muddle to the final garnish.

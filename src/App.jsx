@@ -11,9 +11,9 @@ function App() {
 
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline bg-red">
-        Hello world!
+    <div className='flex-center h-[100vh]'>
+      <h1 className="text-7xl text-indigo-300">
+        Felz world!
       </h1>
     </div>
   )

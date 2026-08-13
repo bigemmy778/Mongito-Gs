@@ -2,6 +2,7 @@ import React from 'react'
 import { navLinks } from '../../constants'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import './Navbar.css'
 
 function Navabar() {
     useGSAP(() => {
@@ -26,7 +27,7 @@ function Navabar() {
 return (
     <nav>
 
-        <div>
+        <div className=''>
             <a href='#home' className='flex items-center gap-2'>
                 <img src="/images/logo.png" alt="logo" />
                 <p> Velvet Pour </p>

@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import { useMediaQuery } from 'react-responsive';
-
+import './Hero.css'
 
 const Hero = () => {
 
@@ -52,19 +52,19 @@ const Hero = () => {
             .to('.left-leaf', { y: -200 }, 0)
 
         // we want to figure out where the animation will start an§d end based on the screen size, so we can use the useMediaQuery hook to check if the screen is mobile or not
-        const startValue = isMobile ?'top 50%' : 'center 60%'; //50% of the viewport height for mobile and 60% for desktop
-        const endValue = isMobile ? '120px top':'bottom top'; // 120px from the top of the viewport for mobile and bottom of the hero section for desktop
+        const startValue = isMobile ? 'top 50%' : 'center 60%'; //50% of the viewport height for mobile and 60% for desktop
+        const endValue = isMobile ? '120px top' : 'bottom top'; // 120px from the top of the viewport for mobile and bottom of the hero section for desktop
 
 
         // gsap animation for the video
         // create the timeline with a defualt duration
-       const tl = gsap.timeline({
+        const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: 'video',
                 start: startValue,
                 end: endValue,
                 scrub: true,
-                pin: true,   
+                pin: true,
                 // onEnter: () => videoRef.current.play(),
                 // onEnterBack: () => videoRef.current.play(),
                 // onLeave: () => videoRef.current.pause(),
@@ -73,11 +73,11 @@ const Hero = () => {
         })
 
         videoRef.current.onloadedmetadata = () => {
-           tl.to(videoRef.current, {
+            tl.to(videoRef.current, {
                 currentTime: videoRef.current.duration
             })
         }
-           
+
     }, []);
 
 
@@ -100,17 +100,17 @@ const Hero = () => {
                     className='right-leaf'
                 />
 
-                <div className='body'>
-                    <div className='content'>
-                        <div className='space-y-5 hidden md:block'>
-                            <p className=''> Cool. Crisp. Classic.</p>
-                            <p className='subtitle'>
+                <div className='body' >
+                    <div className='content content-div'>
+                        <div className='space-y-5 sip-div'>
+                            <p className='text'> Cool. Crisp. Classic.</p>
+                            <p className='subtitle sub1'>
                                 Sip the Spirit <br /> of summer
                             </p>
                         </div>
 
-                        <div className='view-cocktails'>
-                            <p className='subtitle'>
+                        <div className='view-cocktails md:flex flex-col items-center text-center md:items-start md:text-left'>
+                            <p className='subtitle sub2' >
                                 Every cocktail on our menu is a blend of premium ingridients,
                                 creative flair, and timeless recipes --designed to delight your
                                 sense.
@@ -137,3 +137,33 @@ const Hero = () => {
 
 
 export default Hero
+
+
+
+    // < div className = 'space-y-5 md:hidden' >
+    //                         <p className='text-center text-sm sm:text-base'>
+    //                             Cool. Crisp. Classic.
+    //                         </p>
+
+    //                         <p className='subtitle text-center text-2xl sm:text-3xl'>
+    //                             Sip the Spirit <br /> of summer
+    //                         </p>
+    //                     </div >
+
+
+    // <div className='view-cocktails flex flex-col items-center text-center md:items-start md:text-left'>
+
+    //     <p className='subtitle max-w-[320px] sm:max-w-[450px] md:max-w-none text-sm sm:text-base md:text-lg'>
+    //         Every cocktail on our menu is a blend of premium ingridients,
+    //         creative flair, and timeless recipes --designed to delight your
+    //         sense.
+    //     </p>
+
+    //     <a
+    //         href='#cocktails'
+    //         className='mt-5'
+    //     >
+    //         View Cocktails
+    //     </a>
+
+    // </div>

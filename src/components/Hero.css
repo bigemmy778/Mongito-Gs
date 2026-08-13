@@ -1,0 +1,53 @@
+@media screen and (max-width: 1050px){
+    .content-div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 5rem;
+        gap:8rem;
+        width: 100%;
+    }
+
+    .sub1{
+        font-size: 50px ;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 800px){
+    .content-div{
+        margin-top: 2rem;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sub2{
+        width: 100%;
+        margin: 0 auto;
+        text-align-last: center !important;
+        margin-bottom: 10px;
+    }
+     
+    .text{
+        display: none;
+    }
+
+    .sub1,.sip-div{
+       display: none;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .content-div{
+        margin-top: 0rem;
+        background: rgb(0, 8, 255);
+        display: none;
+    }
+}
